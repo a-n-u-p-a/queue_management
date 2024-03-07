@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="619.0" prefWidth="727.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.task4_gui.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <AnchorPane>
+      <children>
+         <Label layoutX="75.0" layoutY="255.0" text="Lastname :">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label layoutX="46.0" layoutY="284.0" prefHeight="19.0" prefWidth="101.0" text="Burger Amount :">
+            <font>
+               <Font size="13.0" />
+            </font>
+         </Label>
+         <Label layoutX="75.0" layoutY="228.0" prefHeight="19.0" prefWidth="72.0" text="Firstname :  ">
+            <font>
+               <Font size="13.0" />
+            </font>
+         </Label>
+         <Button layoutX="51.0" layoutY="188.0" onAction="#getSearchName" prefHeight="25.0" prefWidth="184.0" text="Search for customer details" textFill="#bc3737" />
+         <TextField fx:id="customerName" layoutX="31.0" layoutY="137.0" prefHeight="25.0" prefWidth="218.0" promptText="Enter customer firstname:" />
+         <Label layoutX="186.0" layoutY="28.0" prefHeight="60.0" prefWidth="280.0" text="Welcome to Foodies Fave Queue Management System!" textAlignment="CENTER" textFill="#2f44ff" wrapText="true">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+         <Label fx:id="Fname" layoutX="167.0" layoutY="228.0" prefHeight="20.0" prefWidth="170.0">
+            <font>
+               <Font size="13.0" />
+            </font></Label>
+         <Label fx:id="Lname" layoutX="167.0" layoutY="255.0" prefHeight="20.0" prefWidth="170.0">
+            <font>
+               <Font size="13.0" />
+            </font></Label>
+         <Label fx:id="Burgers" layoutX="167.0" layoutY="284.0" prefHeight="20.0" prefWidth="115.0" />
+         <Label layoutX="87.0" layoutY="314.0" text="Queue :">
+            <font>
+               <Font size="14.0" />
+            </font></Label>
+         <Label layoutX="-2.0" layoutY="340.0" prefHeight="44.0" prefWidth="131.0" text="Queue position(from 0 - max length) :" textAlignment="RIGHT" wrapText="true">
+            <font>
+               <Font size="14.0" />
+            </font></Label>
+         <Label fx:id="queue" layoutX="167.0" layoutY="315.0" />
+         <Label fx:id="index" layoutX="168.0" layoutY="345.0" />
+         <Label fx:id="Q1_0" layoutX="417.0" layoutY="220.0" />
+         <Label fx:id="Q1_1" layoutX="417.0" layoutY="257.0" />
+         <Label fx:id="Q2_0" layoutX="490.0" layoutY="220.0" />
+         <Label fx:id="Q2_1" layoutX="490.0" layoutY="257.0" />
+         <Label fx:id="Q2_2" layoutX="490.0" layoutY="296.0" />
+         <Label fx:id="Q3_0" layoutX="562.0" layoutY="220.0" />
+         <Label fx:id="Q3_1" layoutX="562.0" layoutY="257.0" />
+         <Label fx:id="Q3_2" layoutX="562.0" layoutY="296.0" />
+         <Label fx:id="Q3_3" layoutX="562.0" layoutY="337.0" />
+         <Label fx:id="Q3_4" layoutX="562.0" layoutY="376.0" />
+         <Button layoutX="442.0" layoutY="137.0" mnemonicParsing="false" onMouseClicked="#viewDetails" text="View Customer Data" textFill="RED" />
+         <Label fx:id="WQ_1" layoutX="367.0" layoutY="454.0" text="Label" />
+         <Label fx:id="WQ_2" layoutX="445.0" layoutY="454.0" text="Label" />
+         <Label fx:id="WQ_3" layoutX="524.0" layoutY="454.0" text="Label" />
+         <Label fx:id="WQ_4" layoutX="606.0" layoutY="454.0" text="Label" />
+         <Label fx:id="WQ_0" layoutX="289.0" layoutY="454.0" text="Label" />
+         <Label layoutX="326.0" layoutY="413.0" text="Waiting_Queue" textFill="#0011ff" />
+         <Label layoutX="289.0" layoutY="471.0" text="0" />
+         <Label layoutX="367.0" layoutY="471.0" text="1" />
+         <Label layoutX="445.0" layoutY="471.0" text=" 2" />
+         <Label layoutX="524.0" layoutY="471.0" text=" 3" />
+         <Label layoutX="606.0" layoutY="471.0" text=" 4" />
+         <Label layoutX="417.0" layoutY="183.0" text="Queue_1" textFill="#0d00ff" />
+         <Label layoutX="490.0" layoutY="183.0" text="Queue_2" textFill="#0d00ff" />
+         <Label layoutX="562.0" layoutY="183.0" text="Queue_3" textFill="#0026ff" />
+      </children>
+   </AnchorPane>
+</VBox>
